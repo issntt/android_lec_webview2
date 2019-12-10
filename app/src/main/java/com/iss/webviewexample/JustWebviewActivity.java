@@ -24,8 +24,6 @@ public class JustWebviewActivity extends AppCompatActivity {
 
         // Initialize webview and launch the url
         mWebView = (WebView) findViewById(R.id.web_view);
-        mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.setWebViewClient(new WebViewClient());
         mWebView.loadUrl(mUrl);
     }
 }

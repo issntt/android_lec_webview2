@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     void launchExternalPage(String externalUrl) {
-        Intent intent = new Intent(MainActivity.this, WebviewActivity.class);
+        Intent intent = new Intent(this, JustWebviewActivity.class);
+        //        Intent intent = new Intent(MainActivity.this, WebviewActivity.class);
         intent.putExtra(EXTERNAL_URL, externalUrl);
         startActivity(intent);
     }
